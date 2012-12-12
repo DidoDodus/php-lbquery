@@ -1,0 +1,9 @@
+<?php
+  mysql_connect("127.0.0.1","root","1234");
+  mysql_select_db("bookweb");
+  $sql=mysql_query("select bookid,booktitle,bookpg,bookurl from book");
+  while($row=mysql_fetch_assoc($sql))
+   $output[]=$row;
+  print(json_encode($output));
+  mysql_close();
+?>
