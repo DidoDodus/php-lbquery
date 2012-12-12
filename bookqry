@@ -1,4 +1,7 @@
 <?php
+
+  echo "this is edit1"
+
   mysql_connect("127.0.0.1","root","1234");
   mysql_select_db("bookweb");
   $sql=mysql_query("select bookid,booktitle,bookpg,bookurl from book");
